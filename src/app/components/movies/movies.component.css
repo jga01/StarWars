@@ -1,0 +1,38 @@
+.building-block {
+    border-radius: 10px;
+    margin: 20px;
+    width: 1200px;
+    background: linear-gradient(45deg, transparent 45px, #282727 0);
+    background-color: transparent;
+    opacity: 1;
+    color: #AAAAAA;
+    display: flex;
+}
+
+#title {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.building-block #synopsis {
+    text-align: justify;
+    margin: 10px;
+}
+
+.image-wrapper img {
+    border-left: 2px solid #EDEC51;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #DDDDDD;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+a:hover {
+    color: #EDEC51;
+}

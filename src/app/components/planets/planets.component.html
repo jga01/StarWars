@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngIf="(planetData$ | async) as planets">
+        <div class="planets">
+            <div *ngFor="let planet of planets" class="planet-building-block">
+                <img src="../../../assets/images/planets/{{planet.name}}.jpg" alt="{{planet.name}}" width="250px" height="250px">
+                <div class="planet-name"><h2>{{planet.name}}</h2></div>
+                <div class="planet-content">
+                    <p>Climate: {{planet.climate}}</p>
+                    <p>Gravity: {{planet.gravity}}</p>
+                    <!-- <p>Population: {{planet.population}}</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.image-wrapper {
+    margin: 50px 10px 10px 10px;
+}
+
+.text-wrapper {
+    margin: 50px 10px 10px 10px;
+    width: 500px;
+    color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+    <div *ngIf="(characterData$ | async) as characters">
+        <div class="characters">
+            <div *ngFor="let character of characters" class="character-building-block">
+                <img src="../../../assets/images/characters/{{character.name}}.jpg" alt="{{character.name}}" width="250px" height="250px">
+                <div class="character-name"><h2>{{character.name}}</h2></div>
+                <div class="character-content">
+                    <p>Gender: {{character.name}}</p>
+                    <p>Birth: {{character.birth_year}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

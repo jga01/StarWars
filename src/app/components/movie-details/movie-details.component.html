@@ -1,0 +1,33 @@
+<div class="movie-detail">
+    <div *ngIf="(movieResult$ | async) as film">
+        <!-- Film contents -->
+        <div class="film">
+            <img src="../../../assets/images/movies/{{film.movie.title}}.jpg" alt="Poster of {{film.movie.title}}" width="320">
+            <div class="film-content">
+                <h1>{{film.movie.title.toUpperCase()}}</h1>
+                <p>{{film.movie.opening_crawl}}</p>
+                <h2>Director</h2>
+                <p>{{film.movie.director}}</p>
+                <h2>Producer</h2>
+                <p>{{film.movie.producer}}</p>
+                <h2>Release Date</h2>
+                <p>{{film.movie.release_date}}</p>
+            </div>
+        </div>
+        <!-- Character header -->
+        <div class="char-header">
+            <h2>CHARACTERS</h2>
+        </div>
+        <!-- Character list -->
+        <div class="characters">
+            <div *ngFor="let char of film.characters" class="char-building-block">
+                <img src="../../../assets/images/characters/{{char.name}}.jpg" alt="{{char.name}}" width="250px" height="250px">
+                <div class="char-name"><h2>{{char.name}}</h2></div>
+                <div class="char-content">
+                    <p>Gender: {{char.gender}}</p>
+                    <p>Birth: {{char.birth_year}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

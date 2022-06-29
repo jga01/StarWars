@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.planets {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planet-building-block {
+    background-color: #282727;
+    border-radius: 10px;
+    margin: 15px;
+    width: 250px;
+}
+
+.planet-building-block img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #9E4F60;
+}
+
+.planet-name{
+    color: #DDDDDD;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.planet-content {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #AAAAAA;
+}

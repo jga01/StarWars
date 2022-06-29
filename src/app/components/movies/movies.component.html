@@ -1,0 +1,13 @@
+<div *ngFor="let movie of movieData$ | async" class="building-block">
+    <div class="content-wrapper">
+        <div id="title">
+            <a [routerLink]="['/movies', movie.episode_id]">{{movie.title.toUpperCase()}}</a>
+        </div>
+        <div id="synopsis">
+            <p>{{movie.opening_crawl}}</p>
+        </div>
+    </div>
+    <div class="image-wrapper">
+        <img src="../../../assets/images/movies/{{movie.title}}.jpg" alt="{{movie.title}}" style="width: 500px; height: 260px; object-fit: cover;">
+    </div>
+</div>
