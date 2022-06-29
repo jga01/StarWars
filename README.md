@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/46873180/176506978-a4934d4e-6c6d-4892-918d-0482ed958292.png)
+
 # StarWars
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
